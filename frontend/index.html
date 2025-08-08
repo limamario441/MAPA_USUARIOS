@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Mapa Interativo de Pessoas</title>
+
+  <!-- Leaflet CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="app">
+    <aside class="panel">
+      <h1>Rastreamento de Pessoas</h1>
+      <form id="form">
+        <input id="nome" placeholder="Nome" required />
+        <input id="email" placeholder="Email" type="email" required />
+        <input id="cidade" placeholder="Cidade (ex: Fortaleza, BR)" />
+        <button type="submit">Adicionar</button>
+      </form>
+
+      <h2>Usuários</h2>
+      <ul id="lista"></ul>
+    </aside>
+
+    <main class="mapa">
+      <div id="map" ></div>
+    </main>
+  </div>
+
+  <!-- Leaflet JS -->
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
